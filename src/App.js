@@ -1,23 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+/* eslint-disable react/jsx-filename-extension */
+import React, { useState } from "react";
+import "./App.css";
+import Form from "./components/Form";
+import Card from "./components/Card";
 
 function App() {
+  const [selectedData, setSelectedData] = useState({
+    location: "",
+    state: "",
+    country: "",
+    condition: "",
+    description: "",
+    currentTemp: "",
+    realFeel: "",
+    high: "",
+    low: "",
+  });
+
+  const [isLoaded, setIsLoaded] = useState(false);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="content">
+        <Form
+          selectedData={selectedData}
+          setSelectedData={setSelectedData}
+          setIsLoaded={setIsLoaded}
+        />
+        <Card
+          selectedData={selectedData}
+          setSelectedData={setSelectedData}
+          isLoaded={isLoaded}
+        />
+      </div>
     </div>
   );
 }
