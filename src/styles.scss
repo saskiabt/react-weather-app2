@@ -157,14 +157,14 @@ input {
   justify-content: flex-end;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   .card {
     display: flex;
     flex-direction: column;
     width: 100vw;
     height: 100vh;
     border-radius: 2px;
-    padding-top: 50px;
+    // padding-top: 50px;
   }
 
   input {
