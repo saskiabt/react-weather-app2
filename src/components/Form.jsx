@@ -62,8 +62,14 @@ function Form({ setSelectedData, setIsLoaded }) {
     setIsLoaded(true);
   };
 
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    requestData();
+    console.log("Requested");
+  };
+
   return (
-    <form>
+    <form onSubmit={handleSubmit}>
       <div>
         <input
           type="text"
@@ -72,7 +78,7 @@ function Form({ setSelectedData, setIsLoaded }) {
           onChange={onChange}
           value={location}
         />
-        <button className="submit" type="button" onClick={requestData}>
+        <button className="submit" type="submit" onClick={requestData}>
           <span className="material-symbols-sharp">search</span>
         </button>
       </div>
