@@ -168,6 +168,8 @@ input {
     width: 100vw;
     height: 100vh;
     border-radius: 2px;
+    padding-right: 0px;
+    padding-left: 0px;
   }
   input {
     padding: 0;
@@ -180,5 +182,11 @@ input {
   }
   .content {
     gap: 5vmin;
+  }
+  .c-f-buttons {
+    padding-right: 10%;
+  }
+  .cf {
+    font-size: large;
   }
 }/*# sourceMappingURL=styles.css.map */
