@@ -174,8 +174,8 @@ input {
     font-size: 5vmin;
   }
   .title {
-    padding-left: 5vmin;
-    padding-right: 5vmin;
+    padding-left: 10%;
+    padding-right: 10%;
     font-size: 15vmin;
   }
   .content {
