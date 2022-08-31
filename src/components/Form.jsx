@@ -64,11 +64,11 @@ function Form({ setSelectedData, setIsLoaded }) {
 
   return (
     <form>
-      <p>Enter a city:</p>
       <div>
         <input
           type="text"
           id="location-input"
+          placeholder="Enter a city:"
           onChange={onChange}
           value={location}
         />

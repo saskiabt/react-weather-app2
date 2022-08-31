@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import "./App.css";
 import Form from "./components/Form";
 import Card from "./components/Card";
+import Heading from "./components/Heading";
 
 function App() {
   const [selectedData, setSelectedData] = useState({
@@ -22,6 +23,7 @@ function App() {
   return (
     <div className="App">
       <div className="content">
+        <Heading />
         <Form
           selectedData={selectedData}
           setSelectedData={setSelectedData}

@@ -17,8 +17,18 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10vmin;
+  gap: 2vmin;
   padding-top: 10vmin;
+}
+
+.title {
+  margin: 0;
+  color: white;
+  display: flex;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
 }
 
 .card {
@@ -26,6 +36,10 @@ body {
   color: white;
   border-radius: 5%;
   padding: 30px;
+  width: 30vmin;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .card > .location {
   color: #1f2b3f;
@@ -37,6 +51,7 @@ form {
   font-style: normal;
   color: white;
   font-size: larger;
+  padding-bottom: 2vmin;
 }
 form > div {
   color: white;
