@@ -72,6 +72,17 @@ body {
   > .location {
     color: #1f2b3f;
   }
+
+  animation: fadein 1s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 form {
