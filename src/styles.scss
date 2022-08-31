@@ -1,6 +1,8 @@
 $background-color: #0f0e16;
 $card-background: rgb(219 214 192 / 32%);
 $lilac: #b8b9cf;
+$fiftypercent: 1e1c26;
+$hundredpercent: #1e1a2c;
 
 body {
   margin: 0;
@@ -10,6 +12,22 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: $background-color;
+  // animation: color-change 2s infinite;
+}
+
+@keyframes color-change {
+  0% {
+    background-color: $background-color;
+  }
+  50% {
+    background-color: $fiftypercent;
+  }
+  75% {
+    background-color: $hundredpercent;
+  }
+  100% {
+    background-color: $fiftypercent;
+  }
 }
 
 .App {

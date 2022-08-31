@@ -6,6 +6,35 @@ body {
   background-color: #0f0e16;
 }
 
+@-webkit-keyframes color-change {
+  0% {
+    background-color: #0f0e16;
+  }
+  50% {
+    background-color: 10c26;
+  }
+  75% {
+    background-color: #1e1a2c;
+  }
+  100% {
+    background-color: 10c26;
+  }
+}
+
+@keyframes color-change {
+  0% {
+    background-color: #0f0e16;
+  }
+  50% {
+    background-color: 10c26;
+  }
+  75% {
+    background-color: #1e1a2c;
+  }
+  100% {
+    background-color: 10c26;
+  }
+}
 .App {
   display: flex;
   justify-content: center;
