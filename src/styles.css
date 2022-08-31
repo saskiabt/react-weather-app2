@@ -161,23 +161,22 @@ input {
   justify-content: flex-end;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   .card {
     display: flex;
     flex-direction: column;
     width: 100vw;
     height: 100vh;
     border-radius: 2px;
-    padding-top: 50px;
   }
   input {
     padding: 0;
-    font-size: medium;
+    font-size: 5vmin;
   }
   .title {
     padding-left: 5vmin;
     padding-right: 5vmin;
-    font-size: 3.5em;
+    font-size: 15vmin;
   }
   .content {
     gap: 5vmin;
