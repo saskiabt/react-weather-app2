@@ -16,7 +16,6 @@ function Card(props) {
     setUnit("F");
   };
 
-  console.log(isLoaded);
   if (!isLoaded) return null;
   return (
     <div className="card">
