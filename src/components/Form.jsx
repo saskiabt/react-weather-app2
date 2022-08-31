@@ -73,7 +73,7 @@ function Form({ setSelectedData, setIsLoaded }) {
           value={location}
         />
         <button className="submit" type="button" onClick={requestData}>
-          Enter
+          🔎
         </button>
       </div>
     </form>
